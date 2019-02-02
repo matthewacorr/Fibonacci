@@ -22,16 +22,20 @@ public class Main {
         System.out.print("> ");
         int elements = in.nextInt();
 
-        System.out.println("\nCalculating for " + elements + " iterations.");
+        System.out.println("\n--------------------------------------------------------------------");
+        System.out.println("Calculating for " + elements + " iterations.");
+        System.out.println("--------------------------------------------------------------------");
         // Testing methods
-        System.out.print("Testing iterative method:");
+        System.out.print("Testing iterative method: ");
         long iteTime = Fibonacci.fiboSeriesIte(elements);
 
-        //System.out.print("Testing recursive method:");
-        //long recTime = Fibonacci.fiboSeriesRec(elements);
+        System.out.print("\nTesting recursive method: ");
+        long recTime = Fibonacci.fiboSeriesRec(elements);
 
         // Print out time stamps
-        System.out.println("\nTime taken for iterative method: " + iteTime + " nanoseconds");
-        //System.out.println("Time taken for recursive method: " + recTime + " nanoseconds);
+        System.out.println("\n--------------------------------------------------------------------");
+        System.out.println("Time taken for iterative method: " + iteTime + " nanoseconds");
+        System.out.println("Time taken for recursive method: " + recTime + " nanoseconds");
+        System.out.println("--------------------------------------------------------------------");
     }
 }
