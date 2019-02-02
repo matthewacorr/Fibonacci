@@ -18,31 +18,31 @@ public class Main {
         System.out.println("|    ___|__|  |__._____._____.___._.____.____.|__|");
         System.out.println("|    ___|  |  _  |  _  |     |  _  |  __|  __||  |");
         System.out.println("|___|   |__|_____|_____|__|__|___._|____|____||__|");
-        System.out.println("-------------------------------------------------------------------------");
-        System.out.println("|            Please enter the amount of iterations to perform            |");
-        System.out.println("-------------------------------------------------------------------------");
+        System.out.println("-------------------------------------------------------------");
+        System.out.println("|      Please enter the amount of iterations to perform     |");
+        System.out.println("-------------------------------------------------------------");
 
-        // Take in the amount of elements to print
+        // Take in the amount of iterations to print
         System.out.print("> ");
-        int elements = in.nextInt();
+        int iterations = in.nextInt();
 
-        System.out.println("------------------------------------------------------------------------");
-        System.out.println("Calculating for " + elements + " iterations.");
-        System.out.println("------------------------------------------------------------------------");
+        System.out.println("-------------------------------------------------------------");
+        System.out.println("Calculating for " + iterations + " iterations.");
+        System.out.println("-------------------------------------------------------------");
         // Testing methods
         System.out.print("Testing iterative method: ");
-        long iteTime = Fibonacci.fiboSeriesIte(elements);
+        long iteTime = Fibonacci.fiboSeriesIte(iterations);
 
         System.out.print("\nTesting recursive method: ");
-        long recTime = Fibonacci.fiboSeriesRec(elements);
+        long recTime = Fibonacci.fiboSeriesRec(iterations);
 
         // Print out time stamps
-        System.out.println("\n------------------------------------------------------------------------");
+        System.out.println("\n-----------------------------------------------------------");
         System.out.println("Time taken for iterative method: " + iteTime + " nanoseconds / " + (iteTime/1000000) + " milliseconds");
         System.out.println("Time taken for recursive method: " + recTime + " nanoseconds / " + (recTime/1000000) + " milliseconds");
-        System.out.println("------------------------------------------------------------------------");
+        System.out.println("-------------------------------------------------------------");
         System.out.println("Thanks for playing, goodbye!");
-        System.out.println("------------------------------------------------------------------------");
+        System.out.println("-------------------------------------------------------------");
         System.exit(0);
     }
 }
