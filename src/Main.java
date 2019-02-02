@@ -10,7 +10,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // Create the scanner
+        // Create the scanner for user input
         Scanner in = new Scanner(System.in);
 
         // Welcome the user
@@ -22,21 +22,23 @@ public class Main {
         System.out.println("|      Please enter the amount of iterations to perform     |");
         System.out.println("-------------------------------------------------------------");
 
-        // Take in the amount of iterations to print
+        // Read the amount of iterations to perform
         System.out.print("> ");
         int iterations = in.nextInt();
 
         System.out.println("-------------------------------------------------------------");
         System.out.println("Calculating for " + iterations + " iterations.");
         System.out.println("-------------------------------------------------------------");
-        // Testing methods
+
+        // Call the iterative method
         System.out.print("Testing iterative method: ");
-        long iteTime = Fibonacci.fiboSeriesIte(iterations);
+        long iteTime = Fibonacci.fiboSeriesIte(iterations); // Receive time taken in nanoseconds
 
+        // Call the recursive method
         System.out.print("\nTesting recursive method: ");
-        long recTime = Fibonacci.fiboSeriesRec(iterations);
+        long recTime = Fibonacci.fiboSeriesRec(iterations); // Receive time taken in nanoseconds
 
-        // Print out time stamps
+        // Print out time stamps in both nanoseconds and milliseconds
         System.out.println("\n-----------------------------------------------------------");
         System.out.println("Time taken for iterative method: " + iteTime + " nanoseconds / " + (iteTime/1000000) + " milliseconds");
         System.out.println("Time taken for recursive method: " + recTime + " nanoseconds / " + (recTime/1000000) + " milliseconds");
