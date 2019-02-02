@@ -1,13 +1,13 @@
 /*
     Name: Matthew Corr (0626013)
     Date: Feb 3rd 2019
+    Description: This is the "main" class for Fibonacci, it contains all of the console output the user will see
 
     This program was made for COIS2240, it compares two the speeds of different iterative/recursive methods
  */
 import java.util.Scanner; // Import Scanner to read lines
 
 public class Main {
-
     public static void main(String[] args) {
 
         // Create the scanner for user input

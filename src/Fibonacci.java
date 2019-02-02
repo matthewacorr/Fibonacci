@@ -1,5 +1,14 @@
+/*
+    Name: Matthew Corr (0626013)
+    Date: Feb 3rd 2019
+    Description: This class contains all of the methods which perform all of the counting and printing of the numbers
+
+    This program was made for COIS2240, it compares two the speeds of different iterative/recursive methods
+ */
 public class Fibonacci {
 
+    // This method uses another recursive method to calculate the numbers and then prints them in this method with a for loop
+    // fiboSeriesRec returns the amount of time used to calculate the sequence of numbers.
     public static long fiboSeriesRec(int iterations){
         long startRecTime = System.nanoTime(); // Start timer for recursive method
 
@@ -27,6 +36,7 @@ public class Fibonacci {
     }
 
     // This method uses a for loop to iteratively display the fibonacci sequence
+    // fiboSeriesIte returns the amount of time used to calculate the sequence of numbers.
     public static long fiboSeriesIte(int iterations){
         long n1=0, n2=1, n3;
 
