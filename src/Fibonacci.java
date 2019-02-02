@@ -4,7 +4,8 @@ public class Fibonacci {
         long startRecTime = System.nanoTime(); // Start timer for recursive method
 
         System.out.print("0 "); // Hardcoded 0
-        for(int i = 1; i <= elements; i++){
+        
+        for(int i = 1; i <= (elements -1); i++){
             System.out.print(fiboRecLoop(i) +" ");
         }
 
